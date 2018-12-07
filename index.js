@@ -1,12 +1,16 @@
 // import library to help create a component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { AppRegistry, View } from 'react-native';
 import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 // create component
 const App = () => {
     return (
-        <Header headerText='Albums' />
+        <View>
+            <Header headerText='Albums' />
+            <AlbumList />
+        </View>
     );
 };
 
