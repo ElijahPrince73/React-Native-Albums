@@ -7,7 +7,8 @@ import AlbumList from './src/components/AlbumList';
 // create component
 const App = () => {
     return (
-        <View>
+        // Using flex: 1 allows the bottom element isn't cutoff
+        <View style={{ flex: 1 }}>
             <Header headerText='Albums' />
             <AlbumList />
         </View>
